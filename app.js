@@ -1,1 +1,3 @@
-document.write("Hello JavaSript")
+let name = "JavaScript"
+
+document.write("Hello " + name)
