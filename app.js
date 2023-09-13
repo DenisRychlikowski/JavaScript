@@ -1,14 +1,8 @@
-// document.write("<p>Imię: Denis</p><p>Nazwisko: Rychlikowski</p><p>email: drychlikowski@gmail.com</p><p>Numer telefonu: 781999273</p>")
+let num1 = parseFloat(prompt("Podaj pierwsza liczbe"))
+let num2 = parseFloat(prompt("Podaj druga liczbe"))
 
-// document.write(`<img src="./l.jpg" alt="img">`)
-
-// alert("Denis Rychlikowski")
-
-// confirm("Jesteś pełnoletni?")
-
-let name = prompt("Podaj imie")
-let secondName = prompt("Podaj nazwisko")
-let email = prompt("Podaj emial")
-
-document.write("Nazwisko i imię: " + name + " " + secondName + "<br />")
-document.write("Adres e-mail: " + email)
+if(num2 == 0) {
+    alert("NIE DZIEL PRZEZ 0")
+} else {
+    document.write("Dzielenie: ", num1 / num2)
+}
