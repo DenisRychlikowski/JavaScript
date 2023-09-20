@@ -1,58 +1,62 @@
 //! Zadanie 1 
 
-// function dodawanie() {
-//     let suma = 0;
-//     for (let index = 0; index < arguments.length; index++) {
-//         suma+=arguments[index]
-//     }
-//     return suma;
+// let x = 10; 
+// let y = 17;
+// let z = 23;
+
+// if(y > x && y < z) {
+//     document.write("y jest wiekszy od x i mniejszy od z<br />")
 // }
-// function odejmowanie() {
-//     let suma = arguments[0];
-//     for (let index = 1; index < arguments.length; index++) {
-//         suma-=arguments[index]
-//     }
-//     return suma;
+// if(x<y && x<z) {
+//     document.write("x jest najmniejsza wartoscia<br />")
 // }
-// function mnozenie() {
-//     let suma = arguments[0];
-//     for (let index = 1; index < arguments.length; index++) {
-//         suma*=arguments[index]
-//     }
-//     return suma;
-// }
-// function dzielenie() {
-//     if(arguments[1] == 0) {
-//         alert("Nie dzielimy przez 0")
-//     } else {
-//         return arguments[0] / arguments[1]
-//     }
+// if(z>y && z>x) {
+//     document.write("z jest najwieksza wartoscia<br />")
 // }
 
-// document.write("Dodawanie: ",dodawanie(2, 2, 2, 2) , "<br />")
-// document.write("Odejmowanie: ",odejmowanie(20, 5, 5, 2) , "<br />")
-// document.write("Mnozenie: ",mnozenie(2, 2, 2, 2) , "<br />")
-// document.write("Dzielenie: ",dzielenie(2, 2) , "<br />")
+//! Zadane 2
 
-//! Zadanie 2 
+let x = -21;
+let y = 3421; 
+let z = -212;
 
-// const silnia = (silnia) => {
-//     let suma = 1;
-//     for (let index = 1; index <= silnia; index++) {
-//         suma *= index;
-//     }
-//     return suma
+if(x>=0 && y>=0 && z>=0) {
+    document.write("Wszystkie są dodatnie")
+}
+(x<0 && y<0 && z<0) ? document.write("Wszystkie są ujemne") : document.write("Znaki są różne")
+// else if(x<0 && y<0 && z<0) {
+//     document.write("Wszystkie są ujemne")
+// } else {
+//     document.write("Znaki są różne")
 // }
 
-// console.log(silnia(4))
+//! Zadanie 3
 
-// const power = (potega) => {
-//     let suma = 2
-//     for (let index = 1; index < potega; index++) {
-//         suma * = 2
-//     }
+// let a = prompt("Podaj dzien tygodnia")
 
-//     return suma
+// switch(a) {
+//     case "poniedziałek":
+//         document.write("Cały tydzień przed nami")
+//         break;
+//     case "wtorek":
+//         document.write("Kiedy będzie wolne")
+//         break;
+//     case "środa":
+//             document.write("Dopiero środek tygodnia")
+//             break;
+//     case "czwartek":
+//             document.write("Już czwartek")
+//             break;
+//     case "piątek":
+//         document.write("Wreszcie piątek!")
+//         break;
+//     case "sobota":
+//         document.write("Czas na odpoczynek!")
+//         break;
+//     case "niedziela":
+//         document.write("Jutro znowu poniedziałek")
+//         break;
+//     default:
+//         document.write("nie podano dnia tygodnia")
+//         break;
 // }
-
-// console.log(power(4))
