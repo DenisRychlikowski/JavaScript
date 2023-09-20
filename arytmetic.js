@@ -1,62 +1,48 @@
-//! Zadanie 1 
+//! Zadanie 5
 
-// let x = 10; 
-// let y = 17;
-// let z = 23;
-
-// if(y > x && y < z) {
-//     document.write("y jest wiekszy od x i mniejszy od z<br />")
+// class Uczen {
+//     nazwisko;
+//     imie; 
+//     wiek;
 // }
-// if(x<y && x<z) {
-//     document.write("x jest najmniejsza wartoscia<br />")
+// const uczen1 = new Uczen;
+
+// uczen1.imie = "Denis"
+// uczen1.nazwisko = "Rychlikowski"
+// uczen1.wiek = 18
+
+// const uczen2 = new Uczen;
+
+// uczen2.imie = "Adam"
+// uczen2.nazwisko = "Szwugier"
+// uczen2.wiek = 18
+
+// const uczen3 = new Uczen;
+
+// uczen3.imie = "Oskar"
+// uczen3.nazwisko = "Dudek"
+// uczen3.wiek = 19
+
+
+//! Zadanie egzaminajcyjne
+
+// class Klient {
+//     nazwisko;
+//     imie;
+//     email;
+//     telefon;
+//     setData(nazw, imie, email, tel) {
+//         this.nazwisko = nazw;
+//         this.imie = imie;
+//         this.email = email;
+//         this.telefon = tel;
+//     }
 // }
-// if(z>y && z>x) {
-//     document.write("z jest najwieksza wartoscia<br />")
-// }
 
-//! Zadane 2
+// const klient1 = new Klient;
+// const klient2 = new Klient;
+// const klient3 = new Klient;
 
-let x = -21;
-let y = 3421; 
-let z = -212;
-
-if(x>=0 && y>=0 && z>=0) {
-    document.write("Wszystkie są dodatnie")
-}
-(x<0 && y<0 && z<0) ? document.write("Wszystkie są ujemne") : document.write("Znaki są różne")
-// else if(x<0 && y<0 && z<0) {
-//     document.write("Wszystkie są ujemne")
-// } else {
-//     document.write("Znaki są różne")
-// }
-
-//! Zadanie 3
-
-// let a = prompt("Podaj dzien tygodnia")
-
-// switch(a) {
-//     case "poniedziałek":
-//         document.write("Cały tydzień przed nami")
-//         break;
-//     case "wtorek":
-//         document.write("Kiedy będzie wolne")
-//         break;
-//     case "środa":
-//             document.write("Dopiero środek tygodnia")
-//             break;
-//     case "czwartek":
-//             document.write("Już czwartek")
-//             break;
-//     case "piątek":
-//         document.write("Wreszcie piątek!")
-//         break;
-//     case "sobota":
-//         document.write("Czas na odpoczynek!")
-//         break;
-//     case "niedziela":
-//         document.write("Jutro znowu poniedziałek")
-//         break;
-//     default:
-//         document.write("nie podano dnia tygodnia")
-//         break;
-// }
+// klient1.setData("Rychlikowski", "Denis", "drychlikowski@gmail.com", "781444590")
+// klient2.setData("Dudek", "Oskar", "drychlikowski@gmail.com", "781444590")
+// klient3.setData("Krall", "Hanna", "drychlikowski@gmail.com", "781444590")
