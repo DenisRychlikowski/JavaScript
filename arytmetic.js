@@ -1,48 +1,67 @@
-//! Zadanie 5
+//! Zadanie 3 
 
-// class Uczen {
-//     nazwisko;
-//     imie; 
-//     wiek;
-// }
-// const uczen1 = new Uczen;
+// let data = new Date()
 
-// uczen1.imie = "Denis"
-// uczen1.nazwisko = "Rychlikowski"
-// uczen1.wiek = 18
+// document.write(data.toLocaleString())
+// document.write(data.toUTCString())
 
-// const uczen2 = new Uczen;
+//! Zadanie 4 
 
-// uczen2.imie = "Adam"
-// uczen2.nazwisko = "Szwugier"
-// uczen2.wiek = 18
+// document.write("Round ", Math.round((Math.random() * 10000000).toFixed(3) + 10000000), "<br />")
+// document.write("Ceil ", Math.ceil((Math.random() * 10000000).toFixed(3)), "<br />")
+// document.write("Floor ", Math.floor((Math.random() * 10000000).toFixed(3)), "<br />")
+// document.write("liczba ",(Math.random() * 10000000).toFixed(3), "<br />")
 
-// const uczen3 = new Uczen;
+//! Zadanie 6 
 
-// uczen3.imie = "Oskar"
-// uczen3.nazwisko = "Dudek"
-// uczen3.wiek = 19
+// let num = new Int32Array(10)
 
-
-//! Zadanie egzaminajcyjne
-
-// class Klient {
-//     nazwisko;
-//     imie;
-//     email;
-//     telefon;
-//     setData(nazw, imie, email, tel) {
-//         this.nazwisko = nazw;
-//         this.imie = imie;
-//         this.email = email;
-//         this.telefon = tel;
-//     }
+// for (let index = 0; index < 10; index++) {
+//     num[index] = Math.round((Math.random() * 100) + 100)
 // }
 
-// const klient1 = new Klient;
-// const klient2 = new Klient;
-// const klient3 = new Klient;
+// document.write(num.join(" - "), "<br />")
 
-// klient1.setData("Rychlikowski", "Denis", "drychlikowski@gmail.com", "781444590")
-// klient2.setData("Dudek", "Oskar", "drychlikowski@gmail.com", "781444590")
-// klient3.setData("Krall", "Hanna", "drychlikowski@gmail.com", "781444590")
+// num.sort()
+// document.write(num.join(" - "), "<br />")
+
+// num.reverse()
+// document.write(num.join(" - "), "<br />")
+
+//? Zadanie egzaminacyjne 2
+
+let num = []
+
+for (let index = 0; index <= 100; index++) {
+    num[index] = Math.round(Math.random() * 5) + 1
+}
+document.write(num, "<br />")
+
+let counter = 0
+
+for (let index = 1; index < 7; index++) {
+    num.map(ele => {
+        if(index == ele) {
+            counter++
+        }
+    })
+    document.write(index, " ", counter, "<br />")
+    counter = 0
+}
+
+document.write(num.length)
+
+// let btn = document.querySelector(".btn")
+
+// btn.addEventListener("click", () => {
+//     let a = parseInt(prompt("Podaj długość boku a"))
+//     let b = parseInt(prompt("Podaj długość boku b"))
+//     let c = parseInt(prompt("Podaj długość boku c"))
+
+//     let ob = a + b + c;
+//     let p = ob / 2
+//     let pole = Math.sqrt(p*(p-a)*(p-b)*(p-c))
+
+//     alert("Obwód wynosi: " + ob)
+//     alert("Pole wynosi: " + pole + " cm<sup>2</sup>")
+// })
