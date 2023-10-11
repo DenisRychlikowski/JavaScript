@@ -1,0 +1,10 @@
+.slider {
+    overflow: hidden;
+    height: 300px;
+    aspect-ratio: 4/3;
+    background-color: red;
+}
+
+.slider__img {
+    height: inherit
+}

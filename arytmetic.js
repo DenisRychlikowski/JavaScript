@@ -1,55 +1,14 @@
-//! Zadanie 3 
+//! Zadanie egzaminacyjne 2 
 
-// let data = new Date()
+let jumpScare = document.querySelector(".kaczka__Jump")
+let jumpScareBig = document.querySelector(".kaczka__Jump__big")
 
-// document.write(data.toLocaleString())
-// document.write(data.toUTCString())
+jumpScare.addEventListener("click", () => {
+    jumpScareBig.style.display = "block" 
+    // jumpScare.style.height = "100vh"
+})
 
-//! Zadanie 4 
-
-// document.write("Round ", Math.round((Math.random() * 10000000).toFixed(3) + 10000000), "<br />")
-// document.write("Ceil ", Math.ceil((Math.random() * 10000000).toFixed(3)), "<br />")
-// document.write("Floor ", Math.floor((Math.random() * 10000000).toFixed(3)), "<br />")
-// document.write("liczba ",(Math.random() * 10000000).toFixed(3), "<br />")
-
-//! Zadanie 6 
-
-// let num = new Int32Array(10)
-
-// for (let index = 0; index < 10; index++) {
-//     num[index] = Math.round((Math.random() * 100) + 100)
-// }
-
-// document.write(num.join(" - "), "<br />")
-
-// num.sort()
-// document.write(num.join(" - "), "<br />")
-
-// num.reverse()
-// document.write(num.join(" - "), "<br />")
-
-//? Zadanie egzaminacyjne 2
-
-let num = []
-
-for (let index = 0; index <= 100; index++) {
-    num[index] = Math.round(Math.random() * 5) + 1
-}
-document.write(num, "<br />")
-
-let counter = 0
-
-for (let index = 1; index < 7; index++) {
-    num.map(ele => {
-        if(index == ele) {
-            counter++
-        }
-    })
-    document.write(index, " ", counter, "<br />")
-    counter = 0
-}
-
-document.write(num.length)
+//! Zadanie egzaminacyjne 1
 
 // let btn = document.querySelector(".btn")
 
@@ -65,3 +24,40 @@ document.write(num.length)
 //     alert("Obwód wynosi: " + ob)
 //     alert("Pole wynosi: " + pole + " cm<sup>2</sup>")
 // })
+
+//! Zadanie 3 
+
+//? HTML
+
+//! Zadanie  4
+
+// let Notifi = document.querySelector(".Notifi")
+// let localTest = document.querySelector(".test")
+
+// localTest.addEventListener("mouseover", () => {
+//     Notifi.textContent = "Najechałeś na mnie"
+// })
+// localTest.addEventListener("mouseout", () => {
+//     Notifi.textContent = "I poszoł"
+// })
+
+//! Zadanie 5 
+
+// let localTest = document.querySelector(".test")
+// let countElement = document.querySelector(".count")
+// let counter = 0;
+
+// countElement.textContent = counter
+
+// localTest.addEventListener("click", () => {
+//     counter++;
+//     countElement.textContent = counter
+// })
+
+const validateEmail = (email) => {
+    return String(email)
+    .toLowerCase()
+    .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};

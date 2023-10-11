@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malarz</title>
+    <link rel="stylesheet" type="text/css" href="styl_1.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Malowanie pokoi i biur</h1>
+    </header>
+
+    <main>
+        <div class="left">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="mieszamy.html">Mieszamy</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2>Zapotrzebowanie na farbę</h2>
+            <label for="">Powierzchnia malowania (m<sup>2</sup>):</label>
+            <input type="number" name="" class="input" />
+            <button class="button">Policz</button>
+            <p class="wynik"></p>
+        </div>
+
+        <div class="right">
+            <img src="obraz.jpg" alt="Próbki farb" />
+        </div>
+    </main>
+
+    <footer>
+        <h3>MALARZ</h3>
+        <p>Stronę opracował: 04311092830</p>
+    </footer>
+
+    <script>
+        let ile = document.querySelector(".input")
+        let btn = document.querySelector(".button")
+        let wynik = document.querySelector(".wynik")
+        let result;
+
+        btn.addEventListener("click", () => {
+            wynik.textContent = "Liczba puszek: " + Math.ceil(ile.value / 4)
+        })
+    </script>
+</body>
+
+</html>
